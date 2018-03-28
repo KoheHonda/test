@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="import.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+  <title>top</title>
+</head>
+
+<body>
+<div class="main" id="main">
+  <div class="header">
+    <ul class="header_menu">
+      <li><a href="#main">top</a></li>
+      <li><a href="#profile">profile</a></li>
+      <li><a href="#work">work</a></li>
+    </ul>
+  </div>
+  <h1 class="title">本田昂平のポートフォリオ</h1>
+
+
+  <div class="mainVidual">
+    <div class="mainImg">
+          <img src="img/img_pro/mainv.png" alt="本田昂平の後ろ姿">
+    </div>
+  </div>
+
+
+  <div class="profile" id="profile">
+
+      <div class="title">
+        <h1>プロフィール</h1>
+        <p class="ruby">Profile</p>
+      </div>
+      <div class="profileContents">
+        <div class="profileContents_img">
+          <img src="img/img_pro/port.jpg" alt="profileimg">
+        </div>
+
+        <div class="profileContents_plofil">
+          <h1>「プロセス重視」</h1>
+          <h2><ruby>本田<rt>Honda</rt></ruby>　<ruby>昂平<rt>Kohe</rt></ruby></h2>
+          <p>公立はこだて未来大学で情報デザインを学んでいます。プロセスを意識した問題解決や情報設計を心がけています。観察、分析をしてモノづくりに活かすことが好きです。
+          </p>
+
+          <div class="skill">
+            <p>skill</p>
+            <ul class="skillImg">
+              <li>
+                <img src="img/img_skills/analysis.png" alt="分析能力ピクトグラム">
+                <p>分析能力</p>
+              </li>
+              <li>
+                <img src="img/img_skills/search.png" alt="調査能力ピクトグラム">
+                <p>調査能力</p>
+              </li>
+              <li>
+                <img src="img/img_skills/production.png" alt="再現力ピクトグラム">
+                <p>再現力</p>
+              </li>
+
+            </ul>
+            <ul class="skillImg">
+              <li>
+                <img src="img/img_skills/illustratorillust.png" alt="Illustrator_logo">
+                <p>Illustrator</p>
+              </li>
+              <li>
+                <img src="img/img_skills/processingillust.png" alt="processing_logo">
+                <p>Processing</p>
+              </li>
+              <li>
+                <img src="img/img_skills/css3.png" alt="css3_logo">
+                <p>CSS3</p>
+              </li>
+              <li>
+                <img src="img/img_skills/html5.png" alt="html5_logo">
+                <p>HTML5</p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+   </div>
+
+  </div>
+
+  <div class="work" id="work">
+    <div class="title">
+      <h1>作品</h1>
+      <p class="ruby">Work</p>
+    </div>
+    <ul class="workImg">
+      <li>
+        <a href="work_olgoal.html">
+          <img src="img/img_olgoal/img_olgoal.png" alt="ハミングオルゴールシステム画像">
+          <p class="worktitle">ハミングオルゴールシステム</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="work_am.html">
+          <img src="img/img_am/img_am.jpg" alt="Awaking Mat画像">
+          <p class="worktitle">AM - Awaking Mat -</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="work_typle.html">
+          <img src="img/img_typle/img_typle.jpg" alt="Typle画像">
+          <p class="worktitle">Typle - タイプル -</p>
+        </a>
+      </li>
+
+
+    </ul>
+
+    <ul class="workImg">
+      <li>
+        <a href="work_shiden.html">
+          <img src="img/img_HI/img_HI.png" alt="函館市電サイト改修画像">
+          <p class="worktitle">函館市電サイトの改修</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="work_shiden.html">
+          <img src="" alt="">
+          <p class="worktitle"></p>
+        </a>
+      </li>
+
+      <li>
+        <a href="work_shiden.html">
+          <img src="" alt="">
+          <p class="worktitle"></p>
+        </a>
+      </li>
+
+    </ul>
+
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>2018 KoheHonda's portfolio site</p>
+</div>
+
+
+
+
+
+</body>
+</html>

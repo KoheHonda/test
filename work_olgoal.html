@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="import.css">
+  <title>top/work_olgoal</title>
+</head>
+<body>
+
+  <div class="main">
+    <div class="header">
+      <ul class="header_menu">
+        <li><a href="top.html#top">top</a></li>
+        <li><a href="top.html#profile">profile</a></li>
+        <li><a href="top.html#work">work</a></li>
+      </ul>
+    </div>
+    <h1 class="title">ハミングオルゴールシステム</h1>
+    <div class="mainVidual">
+      <div class="mainImg">
+            <img src="img/img_olgoal/olgoal1.png" alt="ハミングオルゴールシステム画像">
+      </div>
+    </div>
+
+    <div class="concept">
+
+        <div class="concept_element">
+
+          <div class="concept_contents">
+          <div class="title" id="olgoal_concept">
+            <h1>鼻歌でつくるオルゴール</h1>
+            <p class="ruby">Concept</p>
+          </div>
+
+          <p class="concept_detail">ハミングオルゴールシステムを使えば、パソコンに向かって"鼻歌"を歌うことで、
+            好きなフレーズのオルゴールのシリンダーを専門的な知識を使わずに作ることができます。
+          </p>
+
+          <div class="skill">
+            <p>skills</p>
+            <ul class="skillimg">
+              <li>
+                <img src="img/img_skills/processingillust.png" alt="processing_logo">
+              </li>
+              <li>
+                <img src="img/img_skills/production.png" alt="再現力ピクトグラム">
+              </li>
+            </ul>
+            <p class="detail">制作期間/２ヶ月</p>
+            <p class="detail">制作人数/３人</p>
+          </div>
+
+
+        </div>
+        <div class="concept_img">
+          <img src="img/img_olgoal/nagare.png" alt="ハミングオルゴールシステム概要の図解">
+        </div>
+      </div>
+    </div>
+
+    <div class="story" id="olgoal_story">
+      <div class="title">
+        <h1>システムのフロー</h1>
+        <p class="ruby">System</p>
+      </div>
+      <ul class="story_element">
+        <li>
+          <h2>1.鼻歌をpcに入力</h2>
+          <p>pcに向かって"鼻歌"を歌い周波数を抽出して音程の波形を出力します。</p>
+          <div class="story_img">
+            <img src="img/img_olgoal/system.png" alt="鼻歌入力処理画像">
+          </div>
+        </li>
+        <li>
+          <h2>2.波形を数値に変換</h2>
+          <p>出力した波形を計測し、波形の音程の数値を記録したtxtファイルを作成し保存します。</p>
+          <div class="story_img">
+            <img src="img/img_olgoal/henkan.png" alt="音程の変換">
+          </div>
+        </li>
+      </ul>
+      <ul class="story_element">
+        <li>
+          <h2>3.数値からシリンダーのデータを作成</h2>
+          <p>作成した"鼻歌"の波形の数値データを音程の変化に応じてシリンダーの弁の位置情報に変換します。</p>
+          <div class="story_img">
+            <img src="img/img_olgoal/henkan2.png" alt="テキストの変換画像">
+          </div>
+        </li>
+
+        <li>
+          <h2>4.データのstl化</h2>
+          <p>変換した弁の位置情報を3Dのデータに代入し、完成したシリンダーのデータをstlファイル化して3Dプリンタで出力します。</p>
+          <div class="story_img">
+            <img src="img/img_olgoal/system2.png" alt="出力画像">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+<!------->
+      <div class="process">
+        <div class="title" id="olgoal_process">
+          <h1>役割</h1>
+          <p class="ruby">Role</p>
+
+
+          <ul class="process_element">
+
+            <li>
+              <div class="element_top">
+                <div class="element_img">
+                  <img src="img/img_olgoal/process1.png" alt="ハミングオルゴールシステムのシリンダーのモデリングのプログラム">
+                </div>
+                <div class="element_detail">
+                  <h2>モデリングのプログラムを担当</h2>
+                  <p>私はこの作品の中でも、Processingでのシリンダーのモデリングを担当しました。<br>
+                    このプログラムは、音程認識の工程で生成されたtxtファイルを読み取り、内部に格納されている数値を読み込みます。
+                    そしてその数値を弁の位置情報に変換し、その曲でのシリンダーの形を生成するものです。
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="movie">
+        <div class="title" >
+          <h1>動画</h1>
+          <p class="ruby">Movei</p>
+        </div>
+        <video controls src="movie/olgoal.mp4"></video>
+      </div>
+
+
+
+
+      <div class="work" id="work">
+        <div class="title">
+          <h1>作品</h1>
+          <p class="ruby">Work</p>
+        </div>
+
+        <ul class="workImg">
+          <li>
+            <a href="work_am.html">
+              <img src="img/img_am/img_am.jpg" alt="Awaking Mat画像">
+              <p class="worktitle">AM<br>-Aweaking Mat-</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="work_typle.html">
+              <img src="img/img_typle/img_typle.jpg" alt="Typle画像">
+              <p class="worktitle">Typle - タイプル -</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="work_shiden.html">
+              <img src="img/img_HI/img_HI.png" alt="函館市電サイト改修画像">
+              <p class="worktitle">函館市電サイトの改修</p>
+            </a>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="footer">
+      <p>2018 KoheHonda's portfolio site</p>
+    </div>
+
+
+</body>
+</html>
